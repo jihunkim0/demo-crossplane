@@ -1,0 +1,14 @@
+apiVersion: storage.gcp.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: crossplane-example-bucket
+  labels:
+  annotations:
+    crossplane.io/external-name: crossplane-21e85e735
+spec:
+  forProvider:
+    location: EU
+    storageClass: MULTI_REGIONAL
+  providerConfigRef:
+    name: upbound-provider-gcp
+  deletionPolicy: Delete
