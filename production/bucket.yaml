@@ -10,6 +10,7 @@ spec:
     forceDestroy: true
     location: EU
     storageClass: MULTI_REGIONAL
+    requesterPays: true
   providerConfigRef:
     name: upbound-provider-gcp
   deletionPolicy: Delete
