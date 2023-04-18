@@ -1,0 +1,14 @@
+apiVersion: storage.gcp.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: example
+  labels:
+  annotations:
+    crossplane.io/external-name: vernal-acrobat-362003-21e85e734
+spec:
+  forProvider:
+    location: EU
+    storageClass: MULTI_REGIONAL
+  providerConfigRef:
+    name: upbound-provider-gcp
+  deletionPolicy: Delete
